@@ -1,0 +1,159 @@
+@font-face {
+  font-family: 'Press Start 2P';
+  src: url('../fonts/PressStart2P.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.home {
+  padding: 0px 10px;
+  padding-bottom: 20px;
+}
+
+.hero {
+  max-width: 600px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  color: #c900f7;
+  text-shadow: 0px 0px 15px rgb(87, 0, 107), 0px 0px 25px rgba(210, 0, 255, 0.7);
+  transition: all 0.3s ease;
+  font-family: 'Press Start 2P';
+}
+
+.hero p {
+  width: 70%;
+  color: #e3e3e3;
+  line-height: 1;
+  font-family: 'Press Start 2P';
+}
+
+.hero form {
+  padding: 8px;
+  width: 80%;
+  background: linear-gradient(135deg, #5500a0, #0a004f, #4500a0);
+  border-radius: 5px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid #fff;
+}
+
+.hero input {
+  color: #d200ff;
+  flex: 1;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  padding-left: 10px;
+  font-family: 'Press Start 2P';
+  background: none;
+}
+
+.hero button {
+  font-family: 'Press Start 2P';
+  color: #393939;
+  border: none;
+  background: #d200ff;
+  font-size: 10px;
+  padding: 10px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #0a004f;
+  color: #fff;
+  box-shadow: 0px 0px 5px rgba(210, 0, 255, 0.8);
+  border: 2px solid #fff;
+}
+
+.crypto-table {
+  border: 2px solid #fff;
+  max-width: 800px;
+  margin: auto;
+  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+  border-radius: 15px;
+}
+
+.table-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+  padding: 15px 20px;
+  align-items: center;
+  border-bottom: 1px solid #3c3c3c;
+}
+
+.market-cap {
+  text-align: right;
+}
+
+.table-layout:last-child {
+  border: none;
+}
+
+.table-layout div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.table-layout div img {
+  width: 40px;
+}
+
+.table-layout p {
+  font-family: 'Press Start 2P';
+  font-size: 14px;
+  color: #4deaff;
+  margin: 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.coin-symbol {
+  font-family: 'Press Start 2P';
+  font-size: 15px;
+  color: #d200ff;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  margin-right: 5px;
+}
+
+.table-layout .green {
+  color: #00d515;
+}
+
+.table-layout .red {
+  color: #ff4646;
+}
+
+@media (max-width: 768px) {
+  .table-layout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+  .market-cap {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .table-layout div img {
+    width: 25px;
+  }
+  .table-layout {
+    font-size: 13px;
+  }
+  .hero form input {
+    width: 100px;
+  }
+}
